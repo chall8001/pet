@@ -1,32 +1,32 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 import { Menu, Segment } from "semantic-ui-react";
 
 function Navbar() {
   return (
-    <Segment inverted>
-      <Menu inverted secondary>
-        <Menu.Item
-          name="OnlyPets Logo"
-          //   active={activeItem === "home"}
-          //   onClick={this.handleItemClick}
-        />
-        <Menu.Item
-          name="About"
-          //   active={activeItem === "messages"}
-          //   onClick={this.handleItemClick}
-        />
-        <Menu.Item
-          name="Members"
-          //   active={activeItem === "friends"}
-          //   onClick={this.handleItemClick}
-        />
-        <Menu.Item
-          name="Contact"
-          //   active={activeItem === "friends"}
-          //   onClick={this.handleItemClick}
-        />
-      </Menu>
-    </Segment>
+    <>
+    <nav className="navbar">
+    <div className="navbar-container">
+      <ul>
+        <li className='nav-item'>
+        <Link to='/home' className='nav-links'>
+                       Home
+          </Link>
+        </li>
+        <li className='nav-item'>
+        <Link to='/profile' className='nav-links'>
+                       Your Profile
+          </Link>
+        </li>
+        <li className='nav-item'>
+        <Link to='/favorites' className='nav-links'>
+                       Favorites
+          </Link>
+        </li>
+      </ul>
+    </div>
+    </nav>
+    </>
   );
 }
 
