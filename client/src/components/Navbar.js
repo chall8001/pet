@@ -1,5 +1,7 @@
 import React from "react";
 import { Menu, Segment } from "semantic-ui-react";
+import LoginBtn from "./Auth/LoginBtn";
+import LogoutBtn from "./Auth/LogoutBtn";
 
 function Navbar() {
   return (
@@ -25,6 +27,8 @@ function Navbar() {
           //   active={activeItem === "friends"}
           //   onClick={this.handleItemClick}
         />
+        <LoginBtn />
+        <LogoutBtn />
       </Menu>
     </Segment>
   );
