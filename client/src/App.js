@@ -3,7 +3,7 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import Favorites from "./components/Favorites.js";
 import Homepage from "./components/Homepage.js";
-import YourProfile from "./components/YourProfile.js";
+import YourProfile from "./components/Yourprofile.js";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // import Footer from "./components/Footer";
@@ -16,7 +16,7 @@ function App() {
         <Switch>
           <Route path="/" component={Homepage} exact />
           <Route path="/Favorite" component={Favorites} exact />
-          <Route path="/userprofile" component={YourProfile} exact />
+          <Route path="/profile" component={YourProfile} exact />
         </Switch>
       </Router>
     </>
