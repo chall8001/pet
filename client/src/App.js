@@ -1,22 +1,25 @@
 import "./App.css";
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Yourprofile from "./components/Yourprofile";
+import Favorites from "./components/Favorites.js";
+import Homepage from "./components/Homepage.js";
+import YourProfile from "./components/YourProfile.js";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // import Footer from "./components/Footer";
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Switch>
-        <Route exact path={"/"}></Route>
-      </Switch>
-      <Switch>
-        <Route exact path="/Yourprofile" component={Yourprofile} />
-      </Switch>
-    </Router>
+    <>
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route path="/" component={Homepage} exact />
+          <Route path="/Favorite" component={Favorites} exact />
+          <Route path="/userprofile" component={YourProfile} exact />
+        </Switch>
+      </Router>
+    </>
   );
 }
 
