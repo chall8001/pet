@@ -17,8 +17,8 @@ function Navbar() {
         />
         <Menu.Item
           name="Members"
-          //   active={activeItem === "friends"}
-          //   onClick={this.handleItemClick}
+          // active={activeItem === "friends"}
+          // onClick={this.handleItemClick}
         />
         <Menu.Item
           name="Contact"
