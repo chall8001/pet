@@ -4,6 +4,7 @@ import "../App.css";
 import { Link } from "react-router-dom";
 import LoginBtn from "./Auth/LoginBtn";
 import LogoutBtn from "./Auth/LogoutBtn";
+import './Navbar.css'
 
 
 function Navbar() {

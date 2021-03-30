@@ -17,7 +17,7 @@ const onSubmit = (data) => {
 
 return(
     <form onSubmit={handleSubmit(onSubmit)}>
-    <input type="password" placeholder="Pet Name" name="petName" ref={register({required: true})}/>
+    <input type="data" placeholder="Pet Name" name="petName" ref={register({required: true})}/>
     <input type="data" placeholder="Your Name" name="memberName" ref={register({required: true})}/>
     <input type="data" placeholder="Location" name="location" ref={register({required: true})}/>
     <input type="data" placeholder="Breed" name="breedSize" ref={register({required: true})}/>
