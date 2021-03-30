@@ -6,7 +6,7 @@ function CreateUser() {
 
   const onSubmit = (data) => {
     console.log(data);
-    fetch("/create-profile", {
+    fetch("/api/create-profile", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
