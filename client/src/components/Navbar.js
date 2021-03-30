@@ -5,25 +5,22 @@ import { Link } from "react-router-dom";
 import LoginBtn from "./Auth/LoginBtn";
 import LogoutBtn from "./Auth/LogoutBtn";
 
-
 function Navbar() {
   return (
     <nav>
-      <ul>
-
+      <div class="ui menu">
+        <div class="header item" Link to="/">
+          Our Company
+        </div>
+        <a class="item" Link to="/Favorite">
+          About Us
+        </a>
+        <a class="item" Link to="/userprofile">
+          Jobs
+        </a>
         <LoginBtn />
         <LogoutBtn />
-
-        <Link to="/">
-          <li> Homepage </li>
-        </Link>
-        <Link to="/Favorite">
-          <li> Favorites </li>
-        </Link>
-        <Link to="/userprofile">
-          <li> My Profile </li>
-        </Link>
-      </ul>
+      </div>
     </nav>
   );
 }
