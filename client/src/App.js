@@ -5,6 +5,7 @@ import Favorites from "./components/Favorites.js";
 import Homepage from "./components/Homepage.js";
 import Yourprofile from "./components/Yourprofile.js";
 import CreateProfile from "./components/Auth/CreateProfile.js";
+import chatEngine from "./components/chatEngine/chatEngine"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // import Footer from "./components/Footer";
@@ -19,6 +20,7 @@ function App() {
           <Route path="/Favorite" component={Favorites} exact />
 
           <Route path="/userprofile" component={Yourprofile} exact />
+          <Route path="/chatroom" component={chatEngine} exact />
 
         </Switch>
       </Router>

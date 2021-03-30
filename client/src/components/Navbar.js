@@ -24,6 +24,9 @@ function Navbar() {
         <Link to="/userprofile">
           <li> My Profile </li>
         </Link>
+        <Link to="/chatroom">
+          <li> Chat Room  </li>
+        </Link>
       </ul>
     </nav>
   );
