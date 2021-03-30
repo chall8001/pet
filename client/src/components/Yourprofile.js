@@ -2,15 +2,11 @@ import React from "react";
 
 import { Card, Image, Button } from "semantic-ui-react";
 
-function Yourprofile({
-  image,
-  petName,
-  memberName,
-  location,
-  breedSize,
-  birthday,
-  favorites,
-}) {
+function Yourprofile( image, petName, memberName, location, breedSize, birthday, favorites){
+
+
+
+ 
   return (
     <div>
       <Card>
@@ -34,7 +30,8 @@ function Yourprofile({
         </Card.Content>
       </Card>
     </div>
-  );
-}
+     );
+  }
+
 
 export default Yourprofile;
