@@ -6,7 +6,6 @@ import LoginBtn from "./Auth/LoginBtn";
 import LogoutBtn from "./Auth/LogoutBtn";
 import './Navbar.css'
 
-
 function Navbar() {
   return (
     <div>
@@ -16,7 +15,6 @@ function Navbar() {
        <div className="navbar-container">
        <Image src='./images/logo.png'  size='small' rounded />
       <ul className="list">
-
         <Link to="/">
           <li> Homepage </li>
         </Link>
