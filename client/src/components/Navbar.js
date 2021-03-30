@@ -5,12 +5,15 @@ import { Link } from "react-router-dom";
 import LoginBtn from "./Auth/LoginBtn";
 import LogoutBtn from "./Auth/LogoutBtn";
 
+
 function Navbar() {
   return (
     <nav>
       <ul>
+
         <LoginBtn />
         <LogoutBtn />
+
         <Link to="/">
           <li> Homepage </li>
         </Link>
