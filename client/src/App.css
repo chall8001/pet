@@ -1,3 +1,15 @@
+* {
+  margin: 0;
+}
+.container {
+  background-image: url(./components/images/memberbkgd.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat-x;
+  height: 100%;
+  margin: 0;
+}
+
 h1 {
   text-align: center;
 }
