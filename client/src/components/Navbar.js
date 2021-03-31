@@ -1,5 +1,4 @@
 import React from "react";
-import { Image } from 'semantic-ui-react'
 import "../App.css";
 import { Link } from "react-router-dom";
 import LoginBtn from "./Auth/LoginBtn";
@@ -13,7 +12,7 @@ function Navbar() {
     <LogoutBtn />
     <nav className="navbar">
        <div className="navbar-container">
-       <Image src='./images/logo.png'  size='small' rounded />
+       <img src='/images/logo.png'/>
       <ul className="list">
         <Link to="/">
           <li> Homepage </li>
