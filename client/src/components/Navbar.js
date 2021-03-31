@@ -1,37 +1,37 @@
 import React from "react";
+
+import { Image } from "semantic-ui-react";
 import "../App.css";
 import { Link } from "react-router-dom";
-import logo from "./images/onlypetslogo.png";
-import './Navbar.css'
-import Login from "./Auth/LoginBtn"
-import Logout from "./Auth/LogoutBtn"
+import LoginBtn from "./Auth/LoginBtn";
+import LogoutBtn from "./Auth/LogoutBtn";
+import "./Navbar.css";
 
 
 function Navbar() {
   return (
     <div>
-    <nav className="navbar">
-       <div className="navbar-container">
-       <img className="petslogo" src={logo}/>
-      <ul className="list">
-        <Link to="/" className='nav-links' >
-          <li className='nav-item'> Homepage </li>
-        </Link>
-        <Link to="/Favorite" className='nav-links' >
-          <li className='nav-item'> Favorites </li>
-        </Link>
-        <Link to="/userprofile" className='nav-links' >
-          <li className='nav-item'> My Profile </li>
-        </Link>
-        <Link to="/chatroom" className='nav-links' >
-          <li className='nav-item'> Chat Room  </li>
-        </Link>
-      </ul>
-      </div>
-    </nav>
-    <Login />
-    <Logout />
-
+      <LoginBtn />
+      <LogoutBtn />
+      <nav className="navbar">
+        <div className="navbar-container">
+          <Image src="./images/logo.png" size="small" rounded />
+          <ul className="list">
+            <Link to="/">
+              <li> Homepage </li>
+            </Link>
+            <Link to="/Favorite">
+              <li> Favorites </li>
+            </Link>
+            <Link to="/Yourprofile">
+              <li> My Profile </li>
+            </Link>
+            <Link to="/chatroom">
+              <li> Chat Room </li>
+            </Link>
+          </ul>
+        </div>
+      </nav>
     </div>
   );
 }
