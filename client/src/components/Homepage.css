@@ -1,0 +1,23 @@
+.home-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 250px;
+  border-radius: 15px;
+  width: 35%;
+  min-height: 150px;
+  padding: 10px;
+  background-color: ivory;
+  overflow: hidden;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #0d3b49;
+}
+
+.petslogo {
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+}

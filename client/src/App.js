@@ -8,29 +8,26 @@ import CreateProfile from "./components/Auth/CreateProfile.js";
 import BannerAd from "./components/BannerAd";
 import chatEngine from "./components/chatEngine/chatEngine";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import "semantic-ui-css/semantic.min.css";
 
 // import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
-      <Router>
-        <Navbar />
-        <Switch>
-          <Route exact path={["/", "/owners"]}>
-            <Homepage />
-            <CreateProfile />
-          </Route>
-          {/* <Route path="/" component={Homepage} exact /> */}
-          <Route path="/Favorite" component={Favorites} exact />
-
-          <Route path="/userprofile" component={Yourprofile} exact />
-          <Route path="/chatroom" component={chatEngine} exact />
-          {/* <CreateProfile /> */}
-        </Switch>
-
+      <div className="container">
+        <Router>
+          <Navbar />
+          <Switch>
+            <Route path="/" component={Homepage} exact />
+            <Route path="/Favorite" component={Favorites} exact />
+            <Route path="/Yourprofile" component={Yourprofile} exact />
+            <Route path="/chatroom" component={chatEngine} exact />
+          </Switch>
+        </Router>
+        <CreateProfile />
         <BannerAd />
-      </Router>
+      </div>
     </>
   );
 }

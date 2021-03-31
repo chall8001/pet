@@ -1,11 +1,16 @@
-import React from 'react'
+import React from "react";
+import logo from "./images/onlypetslogo.png";
+import "./Homepage.css";
+
+// import Carousel from "./Carousel";
 
 function Homepage() {
-    return (
-        <div>
-            <h1>This is Homepage</h1>
-        </div>
-    )
+  return (
+    <div className="home-container">
+      <h1>Welcome</h1>
+      <img className="petslogo" alt="OnlyPets Logo" src={logo} />
+    </div>
+  );
 }
 
-export default Homepage
+export default Homepage;
