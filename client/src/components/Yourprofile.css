@@ -1,0 +1,7 @@
+.card-container {
+  height: 400px;
+  width: 400px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
