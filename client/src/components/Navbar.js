@@ -1,34 +1,37 @@
 import React from "react";
 import "../App.css";
 import { Link } from "react-router-dom";
-import LoginBtn from "./Auth/LoginBtn";
-import LogoutBtn from "./Auth/LogoutBtn";
+import logo from "./images/onlypetslogo.png";
 import './Navbar.css'
+import Login from "./Auth/LoginBtn"
+import Logout from "./Auth/LogoutBtn"
+
 
 function Navbar() {
   return (
     <div>
-    <LoginBtn />
-    <LogoutBtn />
     <nav className="navbar">
        <div className="navbar-container">
-       <img src='/images/logo.png'/>
+       <img className="petslogo" src={logo}/>
       <ul className="list">
-        <Link to="/">
-          <li> Homepage </li>
+        <Link to="/" className='nav-links' >
+          <li className='nav-item'> Homepage </li>
         </Link>
-        <Link to="/Favorite">
-          <li> Favorites </li>
+        <Link to="/Favorite" className='nav-links' >
+          <li className='nav-item'> Favorites </li>
         </Link>
-        <Link to="/userprofile">
-          <li> My Profile </li>
+        <Link to="/userprofile" className='nav-links' >
+          <li className='nav-item'> My Profile </li>
         </Link>
-        <Link to="/chatroom">
-          <li> Chat Room  </li>
+        <Link to="/chatroom" className='nav-links' >
+          <li className='nav-item'> Chat Room  </li>
         </Link>
       </ul>
       </div>
     </nav>
+    <Login />
+    <Logout />
+
     </div>
   );
 }
