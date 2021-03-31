@@ -1,18 +1,24 @@
 import React from "react";
+
 import { useForm } from "react-hook-form";
+import API from "../../utils/API";
 
 function CreateUser() {
   const { register, handleSubmit } = useForm();
 
-  const onSubmit = (data) => {
+  const onSubmit = (data, event) => {
+    event.preventDefault();
     console.log(data);
-    fetch("/create-profile", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    });
+    API.saveOwner({
+      name: data.ownerName,
+      petName: data.petName,
+      location: data.location,
+      petType: data.petType,
+      birthDay: new Date(data.birthDay),
+      hobbies: data.favoriteActivities,
+    })
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
   };
 
 return(
