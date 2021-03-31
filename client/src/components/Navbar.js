@@ -3,18 +3,16 @@ import React from "react";
 import logo from "./images/onlypetslogo.png";
 import "../App.css";
 import { Link } from "react-router-dom";
-import LoginBtn from "./Auth/LoginBtn";
 import LogoutBtn from "./Auth/LogoutBtn";
 import "./Navbar.css";
-
 
 function Navbar() {
   return (
     <div>
       <nav className="navbar">
         <div className="navbar-container">
-        <img className="petslogo" alt="OnlyPets Logo" src={logo} />
-      
+          <img className="logo" alt="OnlyPets Logo" src={logo} />
+
           <ul className="list">
             <Link to="/">
               <li> Homepage </li>
@@ -28,11 +26,12 @@ function Navbar() {
             <Link to="/chatroom">
               <li> Chat Room </li>
             </Link>
+            <li>
+              <LogoutBtn />
+            </li>
           </ul>
         </div>
       </nav>
-      <LoginBtn />
-      <LogoutBtn />
     </div>
   );
 }
