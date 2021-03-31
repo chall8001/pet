@@ -17,16 +17,20 @@ function App() {
       <Router>
         <Navbar />
         <Switch>
-          <Route path="/" component={Homepage} exact />
+          <Route exact path={["/", "/owners"]}>
+            <Homepage />
+            <CreateProfile />
+          </Route>
+          {/* <Route path="/" component={Homepage} exact /> */}
           <Route path="/Favorite" component={Favorites} exact />
 
           <Route path="/userprofile" component={Yourprofile} exact />
           <Route path="/chatroom" component={chatEngine} exact />
-
+          {/* <CreateProfile /> */}
         </Switch>
+
+        <BannerAd />
       </Router>
-      <CreateProfile />
-      <BannerAd />
     </>
   );
 }

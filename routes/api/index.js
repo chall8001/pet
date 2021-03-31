@@ -1,6 +1,6 @@
 const router = require("express").Router();
-const ownerRoutes = require("./ownerRoutes");
+const ownerRoutes = require("./owners");
 
-router.use("/owner", ownerRoutes);
+router.use("/owners", ownerRoutes);
 
 module.exports = router;
