@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Image } from "semantic-ui-react";
+import logo from "./images/onlypetslogo.png";
 import "../App.css";
 import { Link } from "react-router-dom";
 import LoginBtn from "./Auth/LoginBtn";
@@ -11,11 +11,10 @@ import "./Navbar.css";
 function Navbar() {
   return (
     <div>
-      <LoginBtn />
-      <LogoutBtn />
       <nav className="navbar">
         <div className="navbar-container">
-          <Image src="./images/logo.png" size="small" rounded />
+        <img className="petslogo" alt="OnlyPets Logo" src={logo} />
+      
           <ul className="list">
             <Link to="/">
               <li> Homepage </li>
@@ -32,6 +31,8 @@ function Navbar() {
           </ul>
         </div>
       </nav>
+      <LoginBtn />
+      <LogoutBtn />
     </div>
   );
 }
