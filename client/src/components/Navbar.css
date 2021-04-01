@@ -56,6 +56,6 @@
 }
 
 .logo {
-  width: 300px;
-  padding-left: 20px;
+  width: auto;
+  margin: auto;
 }

@@ -18,7 +18,7 @@ function Favorites() {
             header="Pet Name: Ziggy"
             meta="Username: Blair"
             description="Location: Denver CO"
-            description="Hobbies: The kitchen. Moderate enthusiasm for fetching a tennis ball."
+            description="Hobbies: Anything kitchen. Moderate enthusiasm for fetching a tennis ball."
             extra="Birthday: Dec 24 2019"
           />
         </div>
@@ -28,7 +28,7 @@ function Favorites() {
             header="Pet Name: Ali"
             meta="Username: Luke"
             description="Location: Denver CO"
-            description="Hobbies: Baskets, newspaper, computers, drinking and knocking over your water glass. "
+            description="Hobbies: Baskets, newspaper, computers, drinking out of your glass and then knocking it over."
             extra="Birthday: Mar 24 2018"
           />
         </div>
@@ -48,7 +48,7 @@ function Favorites() {
             header="Pet Name: Murphy"
             meta="Username: Lincoln and Charlotte"
             description="Location: Denver CO"
-            description="Hobbies: Shredding, barking, jupming like a mountain goat over any obstcle."
+            description="Hobbies: Shredding, barking, jumping like a mountain goat over any obstacle."
             extra="Birthday: Feb 14 2020"
           />
         </div>
@@ -58,7 +58,7 @@ function Favorites() {
             header="Pet Name: Loki"
             meta="Username: Lollie"
             description="Location: Denver CO"
-            description="Hobbies: Cooking with exotic spices. Hemmingway and long car rides."
+            description="Hobbies: Cooking with exotic spices. Hemmingway, Darwin, Plato, and Kafka."
             extra="Birthday: Jan 11 2017"
           />
         </div>
