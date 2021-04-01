@@ -8,6 +8,8 @@ import picOne from "./images/1.jpg";
 import picTwo from "./images/2.jpg";
 import picThree from "./images/3.jpg";
 import picFour from "./images/4.jpg";
+import picFive from "./images/5.jpg";
+import picSix from "./images/6.jpg";
 
 // import Carousel from "./Carousel";
 
@@ -36,6 +38,14 @@ function Homepage() {
           <div>
             <img src={picFour} />
             <p className="legend">Murphy</p>
+          </div>
+          <div>
+            <img src={picFive} />
+            <p className="legend">Loki</p>
+          </div>
+          <div>
+            <img src={picSix} />
+            <p className="legend">Tucker</p>
           </div>
         </Carousel>
       </div>

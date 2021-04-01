@@ -5,7 +5,7 @@ import Image from "./images/3.jpg";
 
 function Yourprofile() {
   return (
-    <div className="card-container">
+    <div className="profile-container">
       <Card
         image={Image}
         header="Pet Name: Lulu"
