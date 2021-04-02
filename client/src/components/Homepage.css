@@ -3,7 +3,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
-  margin-bottom: 250px;
+  margin-bottom: 20px;
   border-radius: 15px;
   width: 35%;
   min-height: 150px;
@@ -20,4 +20,13 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 15px;
+}
+
+.carouselpics {
+  width: 40%;
+  margin: auto;
+}
+
+Carousel {
+  border: azure 5pt;
 }
