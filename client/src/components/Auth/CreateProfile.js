@@ -1,12 +1,14 @@
 import React from "react";
+import './CreateProfile.css'
 import { useAuth0 } from "@auth0/auth0-react";
 import { useForm } from "react-hook-form";
 import API from "../../utils/API";
+import "./CreateProfile.css";
+
 
 function CreateUser() {
   const { user } = useAuth0();
   const { register, handleSubmit } = useForm();
-
   const onSubmit = (data, event) => {
     event.preventDefault();
     console.log(data);
@@ -23,10 +25,13 @@ function CreateUser() {
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
   };
-
   return (
+    <div>
+    <div className="large-form-container">
     <form onSubmit={handleSubmit(onSubmit)}>
-      <div>
+      <div className="profile-container">
+        <center><h3>Create Your Profile</h3></center>
+        <br></br>
         <ul>
           <li>
             <input
@@ -82,7 +87,9 @@ function CreateUser() {
         </ul>
       </div>
     </form>
+    </div>
+    </div>
+   
   );
 }
-
 export default CreateUser;
