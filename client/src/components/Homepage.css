@@ -30,3 +30,9 @@
 Carousel {
   border: azure 5pt;
 }
+
+.logbtn {
+  margin: 0;
+  position: relative;
+  left: 35%;
+}

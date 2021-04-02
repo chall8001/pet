@@ -9,11 +9,9 @@ import Image3 from "./images/3.jpg";
 import Image4 from "./images/4.jpg";
 import Image5 from "./images/5.jpg";
 import Image6 from "./images/6.jpg";
-import FavSearch from "./FavSearch";
 
 function Favorites() {
   const { user } = useAuth0();
-  const [searchTerm, setSearchTerm] = useState("");
 
   //grabs all users from the db filtering out the user that is logged in
   function getOwners() {
@@ -26,13 +24,24 @@ function Favorites() {
       .catch((err) => console.log(err));
   }
 
-  function handleSearchTerm(event) {
-    setSearchTerm(event.target.value);
+  function Search() {
+    const [favorite, setFavorites] = useState([]);
+    const [search, setSearch] = useState("");
   }
 
   return (
     <div>
-      <FavSearch onSearch={handleSearchTerm} searchTerm={searchTerm} />
+      <div className="search">
+        <h3>Search Favorites</h3>
+        <input
+          type="text"
+          placeholder="Search name"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+        <List contacts={filteredFavorites} />
+      </div>
+
       <Card.Group itemsPerRow={3}>
         <div className="card-container">
           <Card

@@ -19,7 +19,9 @@ function Homepage() {
       <div className="home-container">
         <h1>Welcome to</h1>
         <img className="petslogo" alt="OnlyPets Logo" src={logo} />
-        <LoginBtn />
+        <div className="logbtn">
+          <LoginBtn />
+        </div>
       </div>
       <div className="carouselpics">
         <Carousel>
