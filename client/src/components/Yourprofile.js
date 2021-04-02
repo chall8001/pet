@@ -26,8 +26,6 @@ function Yourprofile() {
     return [month, day, year].join("-");
   }
 
-  console.log(user);
-
   //this loads the user info from the backend db
   function loadOwnerProfile() {
     API.getOwner(user?.email)

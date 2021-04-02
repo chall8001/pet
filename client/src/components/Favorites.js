@@ -13,6 +13,7 @@ import Image6 from "./images/6.jpg";
 function Favorites() {
   const { user } = useAuth0();
 
+  //grabs all users from the db filtering out the user that is logged in
   function getOwners() {
     API.getOwners()
       .then((res) => {
