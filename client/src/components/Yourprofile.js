@@ -50,11 +50,11 @@ function Yourprofile() {
       <div className="card-container">
         <Card
           image={Image}
-          header={`Pet Name: ${owner.petName}`}
-          meta={`Username: ${owner.name}`}
-          description={`Location: ${owner.location}`}
-          description={`Hobbies: ${owner.hobbies}`}
-          extra={`Birthday: ${formatDate(owner.birthDay)}`}
+          header={`Pet Name: ${owner?.petName}`}
+          meta={`Username: ${owner?.name}`}
+          description={`Location: ${owner?.location}`}
+          description={`Hobbies: ${owner?.hobbies}`}
+          extra={`Birthday: ${formatDate(owner?.birthDay)}`}
         />
       </div>
     )

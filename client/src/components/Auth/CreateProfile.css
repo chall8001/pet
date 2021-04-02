@@ -1,0 +1,26 @@
+/* body {
+  display: none;
+} */
+
+.large-form-container {
+  background-color: white;
+}
+
+.profile-container {
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+}
+
+li {
+  list-style-type: none;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
