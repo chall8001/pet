@@ -1,4 +1,6 @@
 import React from "react";
+import API from "../utils/API";
+import { useAuth0 } from "@auth0/auth0-react";
 import { Card } from "semantic-ui-react";
 import "./Favorites.css";
 import Image1 from "./images/1.jpg";
@@ -9,6 +11,19 @@ import Image5 from "./images/5.jpg";
 import Image6 from "./images/6.jpg";
 
 function Favorites() {
+  const { user } = useAuth0();
+
+  //grabs all users from the db filtering out the user that is logged in
+  function getOwners() {
+    API.getOwners()
+      .then((res) => {
+        const owners = res.data.filter((owner) => owner.user_id !== user.email);
+
+        console.log(owners);
+      })
+      .catch((err) => console.log(err));
+  }
+
   return (
     <div>
       <Card.Group itemsPerRow={3}>
