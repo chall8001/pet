@@ -1,38 +1,48 @@
 .banner {
-  background-size: cover;
   height: 150px;
   border: 2px solid #1d809e;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 100px;
-  background: #82d1e9;
-  background: linear-gradient(30deg, #30b2da 0%, #78cde7 100%);
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.logo {
-  width: 150px;
-  float: right;
-  margin: 0;
+  background: radial-gradient(#0c2c36, #0e4657);
+  width: 100%;
+  overflow: hidden;
 }
 
 .dog {
-  height: 150px;
+  align-content: top;
+  max-width: 200px;
   float: left;
+}
+
+.text-right {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0;
+}
+
+.logo {
+  width: 170px;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+button {
+  display: inline-block;
+  margin: 5px;
 }
 
 header {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 22pt;
+  font-size: 30pt;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #e5261a;
   font-weight: bold;
-  color: #e5261a;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  color: #bd844e;
+  padding-bottom: 5px;
 }
 
-h5 {
+p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 18pt;
-  color: #17667e;
+  color: #f3f3e6;
+  font-size: 20pt;
+  padding-bottom: 5px;
 }
