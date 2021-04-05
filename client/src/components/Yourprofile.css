@@ -1,7 +1,20 @@
-.profile-container {
-  height: 500px;
-  width: 500px;
-  position: relative;
-  margin: 0 auto;
-  margin-top: 3rem;
+.flex-grid {
+  display: flex;
+  background-color: white;
+  padding-top: 20px;
+  padding-left: 25px;
+  padding-bottom: 100px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 100px;
+  margin-top: 20px;
+  border: 1px solid black;
+}
+.col {
+  flex: 3;
+}
+
+.row {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
