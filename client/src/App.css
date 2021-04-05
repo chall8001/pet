@@ -5,9 +5,8 @@
   background-image: url(./components/images/memberbkgd.jpg);
   background-position: center;
   background-size: cover;
-  background-repeat: repeat-x;
-  height: 100%;
-  margin: 0;
+  background-repeat: no-repeat;
+  height: auto;
 }
 
 h1 {

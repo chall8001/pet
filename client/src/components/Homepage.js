@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "./images/onlypetslogo.png";
 import "./Homepage.css";
+import BannerAd from "./BannerAd";
 import LoginBtn from "./Auth/LoginBtn";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
@@ -51,6 +52,8 @@ function Homepage() {
           </div>
         </Carousel>
       </div>
+
+      <BannerAd />
     </div>
   );
 }
