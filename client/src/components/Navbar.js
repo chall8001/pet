@@ -12,7 +12,6 @@ function Navbar() {
       <nav className="navbar">
         <div className="navbar-container">
           <img className="logo" alt="OnlyPets Logo" src={logo} />
-
           <ul className="list">
             <Link to="/">
               <li> Homepage </li>
