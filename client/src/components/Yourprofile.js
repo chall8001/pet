@@ -4,6 +4,7 @@ import { Card } from "semantic-ui-react";
 import "./Yourprofile.css";
 import Image from "./images/3.jpg";
 import API from "../utils/API";
+import Calendar from 'react-calendar'
 
 function Yourprofile() {
   const [owner, setOwner] = useState({});
@@ -56,6 +57,7 @@ function Yourprofile() {
           description={`Hobbies: ${owner?.hobbies}`}
           extra={`Birthday: ${formatDate(owner?.birthDay)}`}
         />
+        <Calendar />
       </div>
     )
   );
