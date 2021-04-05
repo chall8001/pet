@@ -43,7 +43,8 @@ function Yourprofile() {
 
   //if the user tries to access the profile page without loggin in will display this message.
   if (!isAuthenticated) {
-    return <h1 style={{ color: "red" }}>Please Login to see this page!</h1>;
+
+    return <h1 style={{color: "red"}}>Please Login to see this page!</h1>;
   }
 
   return (
