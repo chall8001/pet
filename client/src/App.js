@@ -10,7 +10,6 @@ import CustomChatEngine from "./components/chatEngine/CustomChatEngine";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "semantic-ui-css/semantic.min.css";
 
-
 function App() {
   return (
     <>
@@ -24,8 +23,6 @@ function App() {
             <Route path="/chatroom" component={CustomChatEngine} exact />
           </Switch>
         </Router>
-        <CreateUser />
-        <BannerAd />
       </div>
     </>
   );

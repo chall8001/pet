@@ -4,7 +4,6 @@ import { Card } from "semantic-ui-react";
 import "./Yourprofile.css";
 import Image from "./images/3.jpg";
 import API from "../utils/API";
-import CreateUser from "./Auth/CreateProfile";
 
 function Yourprofile() {
   const [owner, setOwner] = useState({});
@@ -43,24 +42,20 @@ function Yourprofile() {
 
   //if the user tries to access the profile page without loggin in will display this message.
   if (!isAuthenticated) {
-
-    return <h1 style={{color: "red"}}>Please Login to see this page!</h1>;
+    return <h1 style={{ color: "red" }}>Please Login to see this page!</h1>;
   }
 
   return (
     isAuthenticated && (
-      <div>
-        <div className="card-container">
-          <Card
-            image={Image}
-            header={`Pet Name: ${owner?.petName}`}
-            meta={`Username: ${owner?.name}`}
-            description={`Location: ${owner?.location}`}
-            description={`Hobbies: ${owner?.hobbies}`}
-            extra={`Birthday: ${formatDate(owner?.birthDay)}`}
-          />
-        </div>
-        <CreateUser />
+      <div className="card-container">
+        <Card
+          image={Image}
+          header={`Pet Name: ${owner?.petName}`}
+          meta={`Username: ${owner?.name}`}
+          description={`Location: ${owner?.location}`}
+          description={`Hobbies: ${owner?.hobbies}`}
+          extra={`Birthday: ${formatDate(owner?.birthDay)}`}
+        />
       </div>
     )
   );

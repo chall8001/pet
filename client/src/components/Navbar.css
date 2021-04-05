@@ -1,9 +1,5 @@
 .navbar {
-  background: linear-gradient(
-    90deg,
-    rgb(250, 250, 250) 0%,
-    rgb(247, 245, 245) 100%
-  );
+  background-color: #f3f3e6;
   height: 80px;
   display: flex;
   justify-content: center;

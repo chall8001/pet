@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import API from "../utils/API";
 import { useAuth0 } from "@auth0/auth0-react";
-import { Card } from "semantic-ui-react";
+import { Card, Button } from "semantic-ui-react";
 import "./Favorites.css";
 import Image1 from "./images/1.jpg";
 import Image2 from "./images/2.jpg";
@@ -43,6 +43,17 @@ function Favorites() {
             description="Hobbies: Anything kitchen. Moderate enthusiasm for fetching a tennis ball."
             extra="Birthday: Dec 24 2019"
           />
+          <Button
+            color="red"
+            content="Like"
+            icon="heart"
+            label={{
+              basic: true,
+              color: "red",
+              pointing: "left",
+              content: "5",
+            }}
+          />
         </div>
         <div className="card-container">
           <Card
@@ -52,6 +63,17 @@ function Favorites() {
             description="Location: Denver CO"
             description="Hobbies: Baskets, newspaper, computers, drinking out of your glass and then knocking it over."
             extra="Birthday: Mar 24 2018"
+          />
+          <Button
+            color="red"
+            content="Like"
+            icon="heart"
+            label={{
+              basic: true,
+              color: "red",
+              pointing: "left",
+              content: "21",
+            }}
           />
         </div>
         <div className="card-container">
@@ -63,6 +85,17 @@ function Favorites() {
             description="Hobbies: Running, playing, laying in the sun."
             extra="Birthday: Feb 13 2005"
           />
+          <Button
+            color="red"
+            content="Like"
+            icon="heart"
+            label={{
+              basic: true,
+              color: "red",
+              pointing: "left",
+              content: "12",
+            }}
+          />
         </div>
         <div className="card-container">
           <Card
@@ -72,6 +105,17 @@ function Favorites() {
             description="Location: Denver CO"
             description="Hobbies: Shredding, barking, jumping like a mountain goat over any obstacle."
             extra="Birthday: Feb 14 2020"
+          />
+          <Button
+            color="red"
+            content="Like"
+            icon="heart"
+            label={{
+              basic: true,
+              color: "red",
+              pointing: "left",
+              content: "3",
+            }}
           />
         </div>
         <div className="card-container">
@@ -83,6 +127,17 @@ function Favorites() {
             description="Hobbies: Cooking with exotic spices. Hemmingway, Darwin, Plato, and Kafka."
             extra="Birthday: Jan 11 2017"
           />
+          <Button
+            color="red"
+            content="Like"
+            icon="heart"
+            label={{
+              basic: true,
+              color: "red",
+              pointing: "left",
+              content: "5",
+            }}
+          />
         </div>
         <div className="card-container">
           <Card
@@ -92,6 +147,17 @@ function Favorites() {
             description="Location: Denver CO"
             description="Hobbies: Kale. Carrots. Short walks."
             extra="Birthday: 1120 A.D."
+          />
+          <Button
+            color="red"
+            content="Like"
+            icon="heart"
+            label={{
+              basic: true,
+              color: "red",
+              pointing: "left",
+              content: "7",
+            }}
           />
         </div>
       </Card.Group>
