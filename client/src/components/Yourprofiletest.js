@@ -4,8 +4,6 @@ import { Card } from "semantic-ui-react";
 import "./Yourprofile.css";
 import Image from "./images/3.jpg";
 import API from "../utils/API";
-import Calendar from 'react-calendar'
-import CreateUser from "./Auth/CreateProfile";
 
 function Yourprofile() {
   const [owner, setOwner] = useState({});
@@ -44,17 +42,13 @@ function Yourprofile() {
 
   //if the user tries to access the profile page without loggin in will display this message.
   if (!isAuthenticated) {
-
-    return <h1 style={{color: "red"}}>Please Login to see this page!</h1>;
+    return <h1 style={{ color: "red" }}>Please Login to see this page!</h1>;
   }
 
   return (
     isAuthenticated && (
-
-      <> 
- <div className="flex-grid">
- <div class="col">
- <Card 
+      <div className="card-container">
+        <Card
           image={Image}
           header={`Pet Name: ${owner?.petName}`}
           meta={`Username: ${owner?.name}`}
@@ -63,20 +57,6 @@ function Yourprofile() {
           extra={`Birthday: ${formatDate(owner?.birthDay)}`}
         />
       </div>
-    
-      <div class="col">
-        <center><h1 className="title">Your Profile</h1></center>
-        <br></br>
-        <h3>Here you can view your current profile and check the calendar for events</h3>
-        </div>
-      <div class="col">
-      <Calendar/>
-      </div>
-      </div>
-      <CreateUser />
-</>
-    
-
     )
   );
 }

@@ -6,11 +6,10 @@ import Homepage from "./components/Homepage.js";
 import Yourprofile from "./components/Yourprofile.js";
 import CreateUser from "./components/Auth/CreateProfile";
 import BannerAd from "./components/BannerAd";
-import chatEngine from "./components/chatEngine/chatEngine";
+import CustomChatEngine from "./components/chatEngine/CustomChatEngine";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "semantic-ui-css/semantic.min.css";
 import 'react-calendar/dist/Calendar.css';
-
 
 function App() {
   return (
@@ -22,11 +21,9 @@ function App() {
             <Route path="/" component={Homepage} exact />
             <Route path="/Favorite" component={Favorites} exact />
             <Route path="/Yourprofile" component={Yourprofile} exact />
-            <Route path="/chatroom" component={chatEngine} exact />
+            <Route path="/chatroom" component={CustomChatEngine} exact />
           </Switch>
         </Router>
-        <CreateUser />
-        <BannerAd />
       </div>
     </>
   );
